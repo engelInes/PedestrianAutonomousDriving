@@ -7,8 +7,23 @@ import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
 import os
+import pyttsx3
 
+def speak_prediction(predicted_class, confidence):
+    """
+    Uses text-to-speech to announce the prediction.
 
+    Parameters
+    ----------
+    predicted_class : str
+        The predicted weather class
+    confidence : float
+        Confidence score (0-100%)
+    """
+    engine = pyttsx3.init()
+    message = f"The predicted weather is {predicted_class} with {confidence:.1f} percent confidence."
+    engine.say(message)
+    engine.runAndWait()
 def load_model(model_path):
     """
     Loads the trained weather classification model
@@ -152,6 +167,7 @@ def predict_batch(image_dir, model, device, class_names):
         if image_file.lower().endswith(('.png', '.jpg', '.jpeg')):
             image_path = os.path.join(image_dir, image_file)
             predicted_class, confidence, _ = predict_image(image_path, model, device, class_names)
+            speak_prediction(predicted_class, confidence)
             results.append((image_file, predicted_class, confidence))
             print(f"Image: {image_file} - Predicted: {predicted_class} ({confidence:.2f}%)")
 
@@ -169,6 +185,7 @@ if __name__ == "__main__":
         print(f"\nPrediction results for {os.path.basename(image_path)}:")
         print(f"Predicted weather: {predicted_class}")
         print(f"Confidence: {confidence:.2f}%")
+        speak_prediction(predicted_class, confidence)
 
         print("\nClass probabilities:")
         for i, class_name in enumerate(class_names):
