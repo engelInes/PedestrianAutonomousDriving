@@ -1,0 +1,209 @@
+Image: cloudy103.jpg - Low confidence prediction: snow (26.24%)
+Image: cloudy108.jpg - Low confidence prediction: cloudy (51.72%)
+Image: cloudy110.jpg - Low confidence prediction: rime (39.40%)
+Image: cloudy112.jpg - Low confidence prediction: rime (43.64%)
+Image: cloudy117.jpg - Low confidence prediction: snow (31.10%)
+Image: cloudy118.jpg - Low confidence prediction: cloudy (33.77%)
+Image: cloudy128.jpg - Low confidence prediction: sunny (67.84%)
+Image: cloudy132.jpg - Low confidence prediction: hail (27.40%)
+Image: cloudy134.jpg - Low confidence prediction: cloudy (31.49%)
+Image: cloudy14.jpg - Low confidence prediction: cloudy (69.58%)
+Image: cloudy141.jpg - Low confidence prediction: cloudy (63.65%)
+Image: cloudy142.jpg - Low confidence prediction: snow (20.59%)
+Image: cloudy143.jpg - Low confidence prediction: sunny (52.11%)
+Image: cloudy147.jpg - Low confidence prediction: cloudy (26.10%)
+Image: cloudy15.jpg - Low confidence prediction: cloudy (33.80%)
+Image: cloudy154.jpg - Low confidence prediction: cloudy (66.78%)
+Image: cloudy157.jpg - Low confidence prediction: rain (31.26%)
+Image: cloudy159.jpg - Predicted: fogsmog (83.33%)
+Image: cloudy164.jpg - Low confidence prediction: cloudy (28.17%)
+Image: cloudy170.jpg - Low confidence prediction: sunny (41.15%)
+Image: cloudy171.jpg - Low confidence prediction: cloudy (46.20%)
+Image: cloudy178.jpg - Low confidence prediction: cloudy (31.48%)
+Image: cloudy181.jpg - Low confidence prediction: cloudy (65.18%)
+Image: cloudy190.jpg - Low confidence prediction: cloudy (35.19%)
+Image: cloudy194.jpg - Low confidence prediction: snow (21.91%)
+Image: cloudy195.jpg - Low confidence prediction: glaze (46.13%)
+Image: cloudy196.jpg - Predicted: cloudy (76.86%)
+Image: cloudy203.jpg - Low confidence prediction: cloudy (38.54%)
+Image: cloudy217.jpg - Low confidence prediction: snow (22.68%)
+Image: cloudy22.jpg - Low confidence prediction: cloudy (39.30%)
+Image: cloudy222.jpg - Low confidence prediction: rime (25.07%)
+Image: cloudy226.jpg - Low confidence prediction: cloudy (51.92%)
+Image: cloudy231.jpg - Low confidence prediction: cloudy (30.38%)
+Image: cloudy239.jpg - Predicted: cloudy (76.75%)
+Image: cloudy245.jpg - Low confidence prediction: cloudy (35.57%)
+Image: cloudy251.jpg - Low confidence prediction: snow (36.23%)
+Image: cloudy255.jpg - Low confidence prediction: cloudy (45.16%)
+Image: cloudy256.jpg - Low confidence prediction: cloudy (56.13%)
+Image: cloudy257.jpg - Low confidence prediction: cloudy (20.25%)
+Image: cloudy261.jpg - Low confidence prediction: rain (29.57%)
+Image: cloudy267.jpg - Predicted: cloudy (80.70%)
+Image: cloudy27.jpg - Predicted: cloudy (73.86%)
+Image: cloudy277.jpg - Low confidence prediction: cloudy (36.25%)
+Image: cloudy279.jpg - Low confidence prediction: cloudy (41.63%)
+Image: cloudy294.jpg - Low confidence prediction: rime (51.52%)
+Image: cloudy295.jpg - Low confidence prediction: rime (23.69%)
+Image: cloudy34.jpg - Low confidence prediction: cloudy (55.60%)
+Image: cloudy36.jpg - Low confidence prediction: cloudy (65.42%)
+Image: cloudy37.jpg - Low confidence prediction: cloudy (56.05%)
+Image: cloudy38.jpg - Low confidence prediction: cloudy (68.83%)
+Image: cloudy40.jpg - Predicted: cloudy (91.53%)
+Image: cloudy49.jpg - Low confidence prediction: cloudy (49.10%)
+Image: cloudy73.jpg - Low confidence prediction: cloudy (54.12%)
+Image: cloudy78.jpg - Low confidence prediction: cloudy (34.69%)
+Image: cloudy82.jpg - Low confidence prediction: cloudy (68.22%)
+Image: cloudy86.jpg - Low confidence prediction: cloudy (63.08%)
+Image: cloudy89.jpg - Low confidence prediction: cloudy (41.75%)
+Image: cloudy94.jpg - Low confidence prediction: frost (41.90%)
+Image: cloudy95.jpg - Low confidence prediction: hail (37.32%)
+Image: cloudy99.jpg - Low confidence prediction: sunny (26.18%)
+Image: frame_00000.jpg - Low confidence prediction: rain (50.45%)
+Image: frame_00003.jpg - Predicted: rain (74.01%)
+Image: frame_00005.jpg - Predicted: cloudy (81.94%)
+Image: frame_00008.jpg - Predicted: cloudy (90.41%)
+Image: frame_00013.jpg - Low confidence prediction: cloudy (66.89%)
+Image: frame_00015.jpg - Low confidence prediction: cloudy (46.28%)
+Image: frame_00027.jpg - Low confidence prediction: cloudy (69.40%)
+Image: frame_00031.jpg - Predicted: cloudy (88.06%)
+Image: frame_00041.jpg - Predicted: cloudy (86.96%)
+Image: frame_00051.jpg - Predicted: cloudy (98.38%)
+Image: frame_00063.jpg - Low confidence prediction: cloudy (59.84%)
+Image: frame_00065.jpg - Predicted: cloudy (84.10%)
+Image: frame_00076.jpg - Predicted: cloudy (81.16%)
+Image: frame_00079.jpg - Predicted: cloudy (91.90%)
+Image: frame_00080.jpg - Predicted: cloudy (86.13%)
+Image: frame_00087.jpg - Predicted: cloudy (72.42%)
+Image: frame_00088.jpg - Predicted: cloudy (85.32%)
+Image: frame_00092.jpg - Predicted: cloudy (88.98%)
+Image: frame_00094.jpg - Predicted: cloudy (98.36%)
+Image: frame_00098.jpg - Predicted: cloudy (98.23%)
+Image: frame_00104.jpg - Low confidence prediction: cloudy (54.92%)
+Image: frame_00106.jpg - Low confidence prediction: cloudy (64.53%)
+Image: frame_00108.jpg - Predicted: cloudy (81.68%)
+Image: frame_00110.jpg - Predicted: cloudy (92.30%)
+Image: frame_00116.jpg - Predicted: cloudy (78.62%)
+Image: frame_00117.jpg - Predicted: cloudy (71.57%)
+Image: frame_00118.jpg - Low confidence prediction: cloudy (52.09%)
+Image: frame_00124.jpg - Predicted: cloudy (96.46%)
+Image: frame_00127.jpg - Predicted: cloudy (90.49%)
+Image: frame_00129.jpg - Predicted: cloudy (83.55%)
+Image: frame_00131.jpg - Predicted: cloudy (89.42%)
+Image: frame_00135.jpg - Predicted: cloudy (80.47%)
+Image: frame_00149.jpg - Predicted: cloudy (93.31%)
+Image: frame_00153.jpg - Predicted: cloudy (93.23%)
+Image: frame_00156.jpg - Predicted: cloudy (95.40%)
+Image: frame_00158.jpg - Predicted: cloudy (94.98%)
+Image: frame_00160.jpg - Predicted: cloudy (94.74%)
+Image: frame_00164.jpg - Predicted: cloudy (97.84%)
+Image: frame_00180.jpg - Predicted: cloudy (91.66%)
+Image: frame_00190.jpg - Low confidence prediction: cloudy (46.54%)
+Image: frame_00191.jpg - Low confidence prediction: rain (54.99%)
+Image: frame_00193.jpg - Predicted: cloudy (74.99%)
+Image: frame_00195.jpg - Predicted: cloudy (96.67%)
+Image: frame_00196.jpg - Predicted: cloudy (97.44%)
+Image: frame_00217.jpg - Predicted: cloudy (98.67%)
+Image: frame_00226.jpg - Predicted: cloudy (90.53%)
+Image: frame_00228.jpg - Predicted: cloudy (91.82%)
+Image: frame_00236.jpg - Predicted: cloudy (98.59%)
+Image: frame_00243.jpg - Predicted: cloudy (97.91%)
+Image: frame_00246.jpg - Predicted: cloudy (98.49%)
+Image: frame_00248.jpg - Predicted: cloudy (99.41%)
+Image: frame_00250.jpg - Predicted: cloudy (90.30%)
+Image: frame_00257.jpg - Predicted: cloudy (92.19%)
+Image: frame_00259.jpg - Predicted: cloudy (96.50%)
+Image: frame_00269.jpg - Predicted: cloudy (95.84%)
+Image: frame_00282.jpg - Low confidence prediction: cloudy (51.44%)
+Image: frame_00286.jpg - Predicted: cloudy (75.65%)
+Image: frame_00287.jpg - Predicted: cloudy (79.03%)
+Image: frame_00288.jpg - Predicted: cloudy (89.86%)
+Image: frame_00290.jpg - Predicted: cloudy (87.86%)
+Image: frame_00294.jpg - Predicted: cloudy (96.05%)
+Image: frame_00309.jpg - Predicted: cloudy (99.32%)
+Image: frame_00317.jpg - Predicted: cloudy (99.04%)
+Image: frame_00319.jpg - Predicted: cloudy (96.46%)
+Image: frame_00324.jpg - Predicted: cloudy (93.99%)
+Image: frame_00325.jpg - Predicted: cloudy (97.77%)
+Image: frame_00327.jpg - Predicted: cloudy (95.90%)
+Image: frame_00329.jpg - Predicted: cloudy (94.95%)
+Image: frame_00337.jpg - Predicted: cloudy (95.72%)
+Image: frame_00339.jpg - Predicted: cloudy (96.75%)
+Image: frame_00340.jpg - Predicted: cloudy (97.42%)
+Image: frame_00349.jpg - Predicted: cloudy (98.74%)
+Image: frame_00350.jpg - Predicted: cloudy (97.51%)
+Image: frame_00351.jpg - Predicted: cloudy (97.78%)
+Image: frame_00358.jpg - Predicted: cloudy (98.33%)
+Image: frame_00367.jpg - Predicted: cloudy (90.17%)
+Image: frame_00369.jpg - Predicted: cloudy (97.07%)
+Image: frame_00375.jpg - Predicted: cloudy (91.66%)
+Image: frame_00376.jpg - Predicted: cloudy (92.34%)
+Image: frame_00379.jpg - Predicted: cloudy (82.94%)
+Image: frame_00381.jpg - Predicted: cloudy (88.69%)
+Image: frame_00391.jpg - Predicted: cloudy (96.06%)
+Image: frame_00395.jpg - Predicted: cloudy (96.70%)
+Image: frame_00399.jpg - Predicted: cloudy (97.76%)
+Image: frame_00400.jpg - Predicted: cloudy (99.22%)
+Image: frame_00404.jpg - Predicted: cloudy (93.74%)
+Image: frame_00411.jpg - Low confidence prediction: cloudy (69.94%)
+Image: frame_00417.jpg - Low confidence prediction: cloudy (56.30%)
+Image: frame_00420.jpg - Predicted: cloudy (93.21%)
+Image: frame_00426.jpg - Predicted: cloudy (96.96%)
+
+67 images had predictions below the confidence threshold (70%)
+
+Batch Prediction Summary:
+cloudy: 81 images, Avg conf: 91.13%
+
+Evaluating final model: weather_classification_model_improved.pth
+Loaded model weights from weather_classification_model_improved.pth
+Train Accuracy: 82.07%, Test Accuracy: 82.09%
+Per-class Test Accuracy:
+cloudy: 86.00%
+dew: 95.63%
+fogsmog: 90.48%
+frost: 68.64%
+glaze: 64.07%
+hail: 88.21%
+lightning: 97.83%
+rain: 81.15%
+rainbow: 79.01%
+rime: 88.52%
+sandstorm: 71.31%
+snow: 71.93%
+sunny: 62.75%
+
+Evaluating regular model: checkpoint_epoch_0.pth
+Loaded checkpoint from epoch 0
+Train Accuracy: 76.34%, Test Accuracy: 76.16%
+Per-class Test Accuracy:
+cloudy: 66.67%
+dew: 89.68%
+fogsmog: 79.37%
+frost: 70.41%
+glaze: 52.38%
+hail: 94.81%
+lightning: 97.10%
+rain: 79.06%
+rainbow: 72.84%
+rime: 91.15%
+sandstorm: 62.70%
+snow: 55.70%
+sunny: 37.25%
+
+Evaluating kfold model: model_fold_0.pth
+Loaded model weights from model_fold_0.pth
+Train Accuracy: 80.29%, Test Accuracy: 79.78%
+Per-class Test Accuracy:
+cloudy: 88.00%
+dew: 96.03%
+fogsmog: 83.49%
+frost: 63.31%
+glaze: 78.79%
+hail: 84.43%
+lightning: 95.65%
+rain: 86.91%
+rainbow: 76.54%
+rime: 72.73%
+sandstorm: 72.13%
+snow: 67.54%
+sunny: 76.47%
