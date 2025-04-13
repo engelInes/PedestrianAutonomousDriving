@@ -27,11 +27,14 @@ def load_model(model_path):
     """
     model = models.resnet18(pretrained=False)
 
-    train_dir = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/train'
+    train_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/train'
     class_names = [d for d in os.listdir(train_dir) if os.path.isdir(os.path.join(train_dir, d))]
     num_classes = len(class_names)
 
-    model.fc = nn.Linear(model.fc.in_features, num_classes)
+    model.fc = nn.Sequential(
+        nn.Dropout(0.5),
+        nn.Linear(model.fc.in_features, num_classes)
+    )
     model.load_state_dict(torch.load(model_path))
     model.eval()
 
@@ -160,7 +163,7 @@ if __name__ == "__main__":
     print(f"Model loaded successfully on {device}")
     print(f"Class names: {class_names}")
 
-    image_path = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy/frame_00027.jpg'
+    image_path = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy/frame_00027.jpg'
     if image_path and os.path.isfile(image_path):
         predicted_class, confidence, probabilities = predict_image(image_path, model, device, class_names)
         print(f"\nPrediction results for {os.path.basename(image_path)}:")
@@ -176,7 +179,7 @@ if __name__ == "__main__":
         except ImportError:
             print("Matplotlib not available for visualization.")
 
-    test_dir = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test'
+    test_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy'
     if os.path.exists(test_dir):
         batch_results = predict_batch(test_dir, model, device, class_names)
         print("\nBatch Prediction Results:")
