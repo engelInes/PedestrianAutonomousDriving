@@ -28,9 +28,9 @@ import os
 
 torch.backends.cudnn.benchmark= True
 
-data_dir = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_data'
-train_dir = os.path.join(data_dir, 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/train')
-test_dir = os.path.join(data_dir, 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test')
+data_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_data'
+train_dir = os.path.join(data_dir, 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/train')
+test_dir = os.path.join(data_dir, 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test')
 
 checkpoint_dir = 'checkpoints'
 os.makedirs(checkpoint_dir, exist_ok=True)

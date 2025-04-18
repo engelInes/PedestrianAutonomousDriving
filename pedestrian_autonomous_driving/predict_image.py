@@ -51,16 +51,13 @@ def load_model(model_path, use_ensemble=False):
     """
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # Get class names
     train_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/train'
     class_names = [d for d in os.listdir(train_dir) if os.path.isdir(os.path.join(train_dir, d))]
 
     if use_ensemble:
-        # Return paths for ensemble prediction
         return model_path, device, class_names
     else:
-        # Load single model
-        model = create_model()  # Assuming create_model function is accessible
+        model = create_model()
         model.load_state_dict(torch.load(model_path))
         model.eval()
         model = model.to(device)
@@ -204,7 +201,6 @@ def predict_batch(image_dir, model, device, class_names, use_ensemble=False, con
 
 
 if __name__ == "__main__":
-    # Check if ensemble models exist
     ensemble_paths = [os.path.join(checkpoint_dir, f'model_fold_{i}.pth') for i in range(5)]
     use_ensemble = all(os.path.exists(path) for path in ensemble_paths)
 
@@ -221,40 +217,45 @@ if __name__ == "__main__":
     print(f"Model loaded successfully on {device}")
     print(f"Class names: {class_names}")
 
-    image_path = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy/frame_00027.jpg'
-    if image_path and os.path.isfile(image_path):
-        predicted_class, confidence, probabilities = predict_image(
-            image_path, model, device, class_names, use_ensemble)
+    print("Select Prediction Mode:")
+    print("1. Predict a single image")
+    print("2. Predict all images in a folder")
+    choice = input("Enter 1 or 2: ").strip()
 
-        print(f"\nPrediction results for {os.path.basename(image_path)}:")
-        print(f"Predicted weather: {predicted_class}")
-        print(f"Confidence: {confidence:.2f}%")
-        speak_prediction(predicted_class, confidence)
+    if choice == '1':
+        image_path = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy/frame_00027.jpg'
+        if image_path and os.path.isfile(image_path):
+            predicted_class, confidence, probabilities = predict_image(
+                image_path, model, device, class_names, use_ensemble)
 
-        print("\nClass probabilities:")
-        for i, class_name in enumerate(class_names):
-            print(f"{class_name}: {probabilities[i] * 100:.2f}%")
+            print(f"\nPrediction results for {os.path.basename(image_path)}:")
+            print(f"Predicted weather: {predicted_class}")
+            print(f"Confidence: {confidence:.2f}%")
+            speak_prediction(predicted_class, confidence)
 
-        try:
-            display_prediction(image_path, predicted_class, confidence, class_names, probabilities)
-        except ImportError:
-            print("Matplotlib not available for visualization.")
+            print("\nClass probabilities:")
+            for i, class_name in enumerate(class_names):
+                print(f"{class_name}: {probabilities[i] * 100:.2f}%")
 
-    # test_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy'
-    # if os.path.exists(test_dir):
-    #     batch_results = predict_batch(test_dir, model, device, class_names,
-    #                                   use_ensemble, confidence_threshold=70)
-    #
-    #     # Print summary statistics
-    #     if batch_results:
-    #         classes = {}
-    #         for _, pred_class, conf in batch_results:
-    #             if pred_class in classes:
-    #                 classes[pred_class].append(conf)
-    #             else:
-    #                 classes[pred_class] = [conf]
-    #
-    #         print("\nBatch Prediction Summary:")
-    #         for class_name, confs in classes.items():
-    #             avg_conf = sum(confs) / len(confs)
-    #             print(f"{class_name}: {len(confs)} images, Avg conf: {avg_conf:.2f}%")
+            try:
+                display_prediction(image_path, predicted_class, confidence, class_names, probabilities)
+            except ImportError:
+                print("Matplotlib not available for visualization.")
+    elif choice == '2':
+        test_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset/test/cloudy'
+        if os.path.exists(test_dir):
+            batch_results = predict_batch(test_dir, model, device, class_names,
+                                          use_ensemble, confidence_threshold=70)
+
+            if batch_results:
+                classes = {}
+                for _, pred_class, conf in batch_results:
+                    if pred_class in classes:
+                        classes[pred_class].append(conf)
+                    else:
+                        classes[pred_class] = [conf]
+
+                print("\nBatch Prediction Summary:")
+                for class_name, confs in classes.items():
+                    avg_conf = sum(confs) / len(confs)
+                    print(f"{class_name}: {len(confs)} images, Avg conf: {avg_conf:.2f}%")

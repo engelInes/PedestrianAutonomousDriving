@@ -1,3 +1,16 @@
+"""
+Final version of the training model. New approach includes:
+-progressive layer freezing
+-k-fold cross-validation
+-improved data augmentation
+
+Dependencies
+------------
+- PyTorch
+- torchvision
+- OpenCV
+- glob, os, shutil, random
+"""
 import glob
 import torch
 import torch.nn as nn

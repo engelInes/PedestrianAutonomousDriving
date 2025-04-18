@@ -29,8 +29,8 @@ import os
 import shutil
 import random
 
-source_dir = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/dataset'
-target_dir = 'E:/facultate/licenta/pda/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset'
+source_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/dataset'
+target_dir = 'E:/facultate/licenta/pda_backup/PedestrianAutonomousDriving/pedestrian_autonomous_driving/weather_dataset'
 train_ratio = 0.8
 
 train_dir = os.path.join(target_dir, 'train')
